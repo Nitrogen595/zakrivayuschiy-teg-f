@@ -90,6 +90,7 @@
 
 .card__image-label {
   position: absolute;
+  z-index: 1;
   top: 27px;
   right: 25px;
   font-family: var(--font-accent), sans-serif;
@@ -292,7 +293,8 @@ body:has(.safety-dialog[open]) {
   }
 
   .main,
-  .card__image {
+  .card__image,
+  .card__fail {
     inline-size: calc(100vw - 4px);
   }
 
