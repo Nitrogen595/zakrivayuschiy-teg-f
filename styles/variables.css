@@ -1,1 +1,18 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-inter: 'Inter';
+    --font-accent: 'PressStart2P';
+    --font-weight-plain: 400;
+    --font-weight-bold: 700;
+    --font-size-big: 18px;
+    --font-size-smoll: 14px;
+
+    --background-block: #fff;
+    --color-element: #000;
+
+    /* Сердце */
+    --contour-color: black;
+    --main-body-color: #FF0000;
+    --core-color: white;
+    --sparks-color: #FF0000;
+}
