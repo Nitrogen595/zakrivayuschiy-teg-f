@@ -288,14 +288,14 @@ body:has(.safety-dialog[open]) {
 
 @media (width <= 375px) {
   .header {
-    inline-size: calc(100vw - 4px);
+    inline-size: 100vw;
     block-size: 48.5vh;
   }
 
   .main,
   .card__image,
   .card__fail {
-    inline-size: calc(100vw - 4px);
+    inline-size: 100vw;
   }
 
     .safety__button {
