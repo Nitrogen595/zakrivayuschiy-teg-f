@@ -51,7 +51,7 @@
   outline: 2px solid var(--color-element, #000);
   inline-size: clamp(371px, 50vw, 696px);
   block-size: clamp(323px, 50vh, 364px);
-  background-color: var( --background-block, #fff);
+  background-color: var(--background-block, #fff);
 }
 
 .logo {
@@ -139,7 +139,7 @@
 
 .main-body {
   fill: var(--background-block);
-  transition: fill 0.3s  linear;
+  transition: fill 0.3s linear;
 }
 
 .core {
@@ -165,7 +165,7 @@
   transition: fill 0.3s linear;
 }
 
-.like-icon:active .core, 
+.like-icon:active .core,
 .like-icon.is-liked .core {
   fill: var(--sparks-color);
   transition: fill 0.3s linear;
@@ -290,7 +290,13 @@ body:has(.safety-dialog[open]) {
     inline-size: calc(100vw - 4px);
     block-size: 48.5vh;
   }
-  .safety__button {
+
+  .main,
+  .card__image {
+    inline-size: calc(100vw - 4px);
+  }
+
+    .safety__button {
     flex-direction: column;
   }
   .safety__icon-button {
