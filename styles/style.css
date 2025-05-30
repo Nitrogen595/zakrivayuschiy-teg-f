@@ -43,7 +43,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 102px auto 104px;
+  margin: 102px auto;
   padding: 120px 0;
   outline: 2px solid var(--color-element, #000);
   font-family: var(--font-accent), sans-serif;
@@ -70,7 +70,7 @@
 }
 
 .card {
-  margin-bottom: 53px;
+  margin-bottom: 54px;
   outline: 2px solid #000;
   background-color: var(--background-block, #fff);
 }
@@ -118,7 +118,7 @@
 .card__text {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 27px;
   padding: 25px 25px 0;
   font-size: var(--font-size-big, 18px);
   line-height: 21px;
@@ -128,14 +128,19 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 2px;
-  padding: 26px 25px;
+  gap: 8px;
+  padding: 27px 26px;
 }
 
 .card__icon-button {
-  align-self: end;
   cursor: pointer;
+  padding: 0;
+  width: 39px;
   block-size: 34px;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid var(--color-element, #000);
 }
 
 .main-body {
@@ -197,6 +202,7 @@
   outline: 2px solid var(--color-element, #000);
   inline-size: 128px;
   block-size: 34px;
+  padding: 9px;
 }
 
 .button__text {
@@ -280,10 +286,12 @@ body:has(.safety-dialog[open]) {
 
 @media (width <= 375px) {
   .header {
-    margin: 95px auto 103px;
-    padding: 117px 0;
+    margin: 101px auto 103px;
+    padding: 115px 0 120px;
     inline-size: 100vw;
   }
+  
+
 
   .main,
   .card__image,
@@ -354,8 +362,4 @@ body:has(.safety-dialog[open]) {
 
 .button__animation:hover::before {
   transform: translateX(0);
-}
-
-.button__animation:focus-visible {
-  outline: 2px solid var(--color-element, #000);
 }
