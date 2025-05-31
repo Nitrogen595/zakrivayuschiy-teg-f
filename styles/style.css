@@ -90,7 +90,7 @@
 .card__image-label {
   position: absolute;
   top: 27px;
-  right: 25px;
+  right: clamp(0.813rem, 0.548rem + 1.13vw, 1.563rem);
   z-index: 1;
   opacity: 50%;
   font-family: var(--font-accent), sans-serif;
@@ -265,7 +265,7 @@
 .dialog-close {
   display: block;
   margin: 0px auto 30px;
-  padding: 12.5px 132px;
+  padding: 9px 132px;
   outline: 2px solid var(--color-element, #000);
   text-transform: uppercase;
   cursor: pointer;
@@ -291,12 +291,14 @@ body:has(.safety-dialog[open]) {
     inline-size: 100vw;
   }
   
-
-
   .main,
   .card__image,
   .card__fail {
     inline-size: 100vw;
+  }
+
+  .card__image-label {
+  right: 13px;
   }
 
   .safety__button {
